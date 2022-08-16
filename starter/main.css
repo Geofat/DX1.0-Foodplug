@@ -3,6 +3,244 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'custom-lato';
+    src: url('./font-20220816T091533Z-001/font/Lato-Bold.ttf')format('truetype'),
+    url('./font-20220816T091533Z-001/font/lato-regular-webfont.woff')format('woff'),
+    url('./font-20220816T091533Z-001/font/lato-regular-webfont.woff2')format('woff2'),
+    url('./font-20220816T091533Z-001/font/Lato-Regular.ttf')format('truetype');
+}
+body{
+    font-family: 'custom-lato', sans-serif;
+    height: 1500px;
+
+}
+/* about us section starts here */
+.about-us_banner-holder{
+display: flex;
+flex-direction: column;
+align-items: center;
+/* border: 3px solid tomato; */
+text-align: center;
+height: 250px;
+background: var(--grey-gradient), url('./img/about3.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom right;
+
+}
+
+.about-us_banner-holder h2{
+    color: var(--main-color);
+}
+
+.about-us_banner-holder p{
+    margin: 20px 0;
+}
+
+.btn-waves{
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: var(--white-color);
+    background: var(--main-color);
+    border: 2px solid var(--white-color);
+    /* outline :10px solid var(---black-color) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    /* short cut */
+    animation: ripple 2s infinite;
+
+    /* long cut */
+    /* animation-name: ripple; */
+    /* animation-duration: 2s; */
+    /* animation-iteration-count: infinite; */
+
+}
+
+
+
+
+
+
+
+
+
+/* about us section ends here */
+
+
+/* explore food section starts here */
+.explore-food{
+    padding: 30px 0;
+    border-bottom: 70px solid var(--main-color);
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.explore-food h2{
+    color: var(--main-color);
+
+}
+.explore-food h2+p{
+    margin: 20px 0;
+}
+
+.foodcard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foodcard_item{
+    /* border: 3px solid tomato; */
+    width: 320px;
+    overflow: hidden;
+}
+
+.foodcard_imageholder{
+    /* border: 3px solid black; */
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    overflow: hidden;
+}
+
+.foodcard_imageholder img{
+    width: 100%;
+    height: 100%;
+}
+.foodcard_text-holder{
+
+    text-align: left;
+}
+.foodcard_text-holder h4,
+.foodcard_text-holder h3{
+    margin: 10px 0;
+}
+
+.foodcard_text-holder span{
+    text-decoration: line-through;
+    color: var(--text-color);
+    /* margin-left: 4px; */
+}
+
+.foodcard_text-holder button:hover{
+color: var(--main-color);
+}
+
+
+/* explore food section ends here */
+
+/* faq section starts here */
+.faq{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.faq_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.faq_item{
+    max-width: 45%;
+}
+.faq_item span{
+    color: var(--main-color);
+    margin: 0 10px 0 0;
+}
+.faq_item h3{
+    text-align: left;
+    color: var(--main-color-dark);
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.faq_item p{
+    text-align: justify;
+}
+
+
+
+
+.faq_parallax{
+    /* border: 3px solid tomato; */
+    height: 200px;
+    background: var(--gradient), url(./img/cta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.faq_parallax h2{
+color: var(--white-color);
+font-size: 30px;
+font-weight: bold;
+}
+
+
+/* faq section ends here */
+
+/* cta section starts here */
+.cta{
+    padding: 30px 0;
+    text-align: center;
+}
+.cta h2{
+    color: var(--main-color-dark);
+    font-size: 30px;
+    font-weight: bolder;
+}
+.cta p{
+    margin: 20px 0;
+}
+.cta input{
+    padding: 15px 10px;
+    border: 2px solid var(--main-color);
+    border-right: none;
+    outline: none;
+    transition: all 1s ease;
+}
+.cta input:hover{
+    width: 300px;
+}
+.cta button{
+border: 2px solid var(--main-color);
+background: var(--main-color);
+color: var(--white-color);
+}
+.btn{
+    padding: 15px 20px;
+}
+.btn-main{
+    background: var(--main-color);
+    color: var(--white-color);
+    border: 2px solid var(--main-color);
+}
+.btn-main:hover{
+    background: transparent;
+}
+.cta-input-holder{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* cta section ends here */
 
 /* footer section start here */
 button a{
