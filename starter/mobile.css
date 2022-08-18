@@ -1,0 +1,77 @@
+@media screen and (max-width:1120px) {
+    /* header section starts  here */
+    /* header section ends  here */
+
+    /* header section starts  here */
+    .nav-desktop{
+        display: none;
+    }
+    .header-banner_content{
+        width: 100%;
+    }
+
+
+
+
+
+    /* header section ends here */
+
+
+
+    /* about us section starts here */
+    .about-us_card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us_text-contentholder,
+    .about-us_card-imageholder{
+        min-width: 350px;
+        margin: 20px 0;
+    }
+
+
+    /* about us section ends here */
+
+
+
+    /* explore food section starts here */
+    .foodcard_item{
+        margin: 20px 0;
+    }
+    /* explore food sections end here */
+
+
+    /* faq section starts here */
+    .faq_item{
+        min-width: 100%;
+    }
+    .faq_parallax{
+        flex-direction: column;
+    }
+
+    /* faq section ends here */
+
+
+
+    /* footer section starts here */
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+
+    }
+    .footer-icon_holder{
+        margin: 20px 0;
+
+    }
+    /* footer section ends here */
+    
+
+
+
+
+
+
+
+
+}

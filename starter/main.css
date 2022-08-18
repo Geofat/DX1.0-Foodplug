@@ -10,13 +10,249 @@
     url('./font-20220816T091533Z-001/font/lato-regular-webfont.woff2')format('woff2'),
     url('./font-20220816T091533Z-001/font/Lato-Regular.ttf')format('truetype');
 }
-body{
-    font-family: 'custom-lato', sans-serif;
-    height: 1500px;
+html{
+    scroll-behavior: smooth;
 
 }
+body{
+    font-family: 'custom-lato', sans-serif;
+    /* height: 1500px; */
+
+}
+/* nav section starts here */
+/* ---------------------- */
+.nav-mobile{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+.nav-mobile_brand{
+    display: flex;
+    align-items: center;
+}
+.nav-mobile_brand span{
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.mobilenav_logo-holder{
+    padding: 5px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+.hamburger-menu{
+    border: 2px solid var(--white-color);
+    width: 25px;
+    height: 25px;
+}
+.mobile_link-holder{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background: var(--main-color);
+    right: 0;
+    top: 0;
+    /* padding-left:15x; */
+}
+.mobile_link-holder button{
+border: 2px solid var(--white-color);
+background: transparent;
+color: var(--white-color);
+margin-left: 15px;
+}
+.mobile_link-holder li{
+    list-style: none;
+}
+.mobile_header-links{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.mobile_header-links:hover,
+.mobile_header-links:focus{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.active-link{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+/* ---------------------- */
+
+
+
+
+
+.nav-desktop{
+    position: fixed;
+    width: 100%;
+    background: var(--white-color);
+}
+
+.header-logo{
+    top: 0;
+    left: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    width: 100px;
+    color: var(--white-color);
+    font-size: 50px;
+}
+.link-holder{
+    display: flex;
+    /* border: 3px solid tomato; */
+    justify-content: flex-end;
+}
+.link-holder button{
+    margin-left: 20px;
+}
+.link-holder ul{
+    display: flex;
+    /* border: 2px solid black; */
+    /* width:500px; */
+}
+.link-holder li{
+    list-style: none;
+    border: 2px solid var(--white-color);
+}
+.header-links
+{
+    display: block;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* nav section end here */
+/* header section starts here */
+
+.header-banner{
+    /* border: 3px solid tomato; */
+    height: 450px;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-banner_container{
+    height: 100%;
+    /* border: 3px solid black; */
+    width: 90%;
+    margin: 0 auto;
+}
+.header-banner_content{
+    /* border: 3px solid blue; */
+    width: 50%;
+}
+.header-banner_content h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    line-height: 1.1;
+    font-weight: 300;
+
+}
+.header-banner_content p{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.header-banner_content button{
+    margin-right: 10px;
+}
+.header_counter{
+    display: flex;
+    background: var(--main-color);
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+.counter-item{
+    text-align: center;
+    color: var(--white-color);
+    width: 180px;
+    /* height: 90px; */
+    /* border: 3px solid var(--white-color); */
+}
+.counter-item h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+/* header section ends here */
+
 /* about us section starts here */
+
+.about-us_card-container{
+    /* border: 3px solid tomato; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+.about-us_card-imageholder{
+    border-radius: 30px;
+    /* height: 350px; */
+    width: 48%;
+    /* border: 3px solid black; */
+    overflow: hidden;
+}
+.about-us_card-imageholder img{
+    /* height:auto; */
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us_text-contentholder{
+    /* height: 350px; */
+    width: 48%;
+    /* border: 3px solid blue; */
+
+}
+.about-us_text-contentholder ul{
+    margin-bottom: 20px;
+}
+.about-us_text-contentholder li{
+    list-style: none;
+
+}
+.about-us_text-contentholder h2{
+    color: var(--main-color);
+    background: var(--text-color);
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    padding: 10px;
+    
+}
+.check-icon{
+    color: var(--main-color);
+    margin-right:20px;
+}
+.cardicon{
+    margin-left: 15px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.about-us_text-contentholder p{
+    margin: 20px 0;
+}
+
 .about-us_banner-holder{
+padding: 30px 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -32,6 +268,7 @@ background-position: bottom right;
 
 .about-us_banner-holder h2{
     color: var(--main-color);
+    font-size: 30px;
 }
 
 .about-us_banner-holder p{
@@ -94,6 +331,7 @@ background-position: bottom right;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .foodcard_item{
@@ -141,6 +379,9 @@ color: var(--main-color);
     width: 90%;
     margin: 0 auto;
     text-align: center;
+}
+.faq h2{
+    padding-top: 20px;
 }
 .faq_container{
     display: flex;
@@ -220,13 +461,23 @@ color: var(--white-color);
 .btn{
     padding: 15px 20px;
 }
-.btn-main{
+.btn-light{
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+.btn-light:hover{
+    color: var(--main-color);
+
+}
+.btn-main {
     background: var(--main-color);
     color: var(--white-color);
     border: 2px solid var(--main-color);
 }
 .btn-main:hover{
     background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 .cta-input-holder{
     display: flex;
